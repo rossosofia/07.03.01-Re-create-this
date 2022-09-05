@@ -1,0 +1,9 @@
+:root {
+  --red: #d94e4e;
+  --white: #ffffff;
+  --light-gray: #f2f2f2;
+  --paragraph-text-color: #591e23;
+  --checkbox-checked-task: url();
+}
+
+/* look for typography */
