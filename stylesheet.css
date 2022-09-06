@@ -210,10 +210,6 @@ h3 {
   margin-bottom: 0.3vw;
 }
 
-/* .task-btn {
-  box-shadow: 2px 2px 5px var(--dark-brown);
-} */
-
 .task-btn div {
   display: flex;
   flex-wrap: nowrap;
@@ -260,7 +256,7 @@ h3 {
   background-color: var(--opacity-red);
   color: var(--white);
   border-top: 0.8px solid var(--white);
-  margin: 2vw 0 8vw 0;
+  margin: 2vw 0 5vw 0;
   font-size: 1vw;
 }
 
@@ -268,4 +264,54 @@ h3 {
   font-weight: bold;
   font-size: 2vw;
   margin-left: 0.5vw;
+}
+
+/* SECTION 3 - TEXT */
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2vw;
+}
+
+h1,
+h2,
+.section-3 p,
+ol,
+li {
+  grid-column: 2/-2;
+  color: var(--dark-brown);
+}
+
+h1 {
+  font-size: bold;
+  font-size: 1.8vw;
+}
+
+h2 {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+.section-3 p,
+ol,
+li {
+  font-size: 0.9vw;
+  line-height: 1.8vw;
+}
+
+.features {
+  list-style: none;
+}
+
+.features li::before {
+  content: "\2022";
+  color: var(--red);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+b {
+  color: var(--red);
 }
