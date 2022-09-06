@@ -1,7 +1,7 @@
 :root {
   --red: #db524d;
   --medium-red: #be5551;
-  --opacity-red: #df645f;
+  --opacity-red: #e9736f;
   --white: #ffffff;
   --light-gray: #f2f2f2;
   --dark-brown: #591e23;
@@ -15,11 +15,21 @@ body {
   margin: 0;
 }
 
-/* NAVBAR */
-header {
+/* ---------------------- NAVBAR ----------------------  */
+header,
+.section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--red);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2/-2;
+  color: var(--white);
+  border-bottom: 1px solid var(--medium-red);
 }
 
 .logo {
@@ -36,15 +46,6 @@ header {
 .logo img {
   width: 15px;
   padding-right: 5px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 2/-2;
-  color: var(--white);
-  border-bottom: 0.2px solid var(--medium-red);
 }
 
 .menu button {
@@ -68,4 +69,73 @@ header {
 .menu button img {
   width: 10px;
   padding-right: 5px;
+}
+
+/* ---------------------- section 1 timer ----------------------  */
+.section-1-timer,
+.section-1-timer-btns,
+.working-on {
+  grid-column: 2/-2;
+}
+
+.section-1-timer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: var(--opacity-red);
+  margin: 2rem 3rem 2rem 3rem;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+}
+
+.section-1-timer-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.section-1-timer-btns button {
+  border: none;
+  color: var(--white);
+  background-color: var(--opacity-red);
+  border-radius: 3px;
+  padding: 5px 7px 5px 7px;
+  margin-left: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.section-1-timer-btns button:hover {
+  background-color: var(--medium-red);
+}
+
+.timer {
+  font-size: 7vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  margin: 1vw 0 1vw 0;
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn {
+  border: none;
+  background-color: var(--white);
+  color: var(--red);
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: bold;
+  grid-row: 3;
+  padding: 1vw 3vw 1vw 3vw;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: var(--medium-red);
+  color: var(--white);
 }
