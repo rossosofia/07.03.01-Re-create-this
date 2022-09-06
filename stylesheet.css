@@ -21,7 +21,8 @@ body {
 
 /* ---------------------- NAVBAR ----------------------  */
 header,
-.section-1 {
+.section-1,
+.section-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--red);
@@ -158,5 +159,113 @@ header,
   color: var(--white);
   font-weight: 600;
   font-size: 1vw;
-  margin: 0 0 2vw 0;
+  margin: 0 0 1vw 0;
+}
+
+/* ---------------------- section 2 tasks ----------------------  */
+
+.tasks-header,
+.task-btn,
+.tasks-footer {
+  grid-column: 2/-2;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0 1vw 0;
+  padding-bottom: 1vw;
+  border-bottom: 2px solid var(--opacity-red);
+}
+
+.tasks-header img {
+  width: 18px;
+  background-color: var(--opacity-red);
+  padding: 0.3vw;
+  border-radius: 1px;
+}
+
+.tasks-header img:hover {
+  background-color: var(--medium-red);
+}
+
+h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.3vw;
+  align-self: center;
+}
+
+/* task btn general  */
+
+.task-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 3px;
+  border-left: 4px solid var(--white);
+  font-size: 1vw;
+  padding: 0.2vw 0 0.2vw 0;
+  margin-bottom: 0.3vw;
+}
+
+/* .task-btn {
+  box-shadow: 2px 2px 5px var(--dark-brown);
+} */
+
+.task-btn div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.task-btn img {
+  width: 20px;
+  padding: 0.3vw;
+  margin: 0 1vw 0 1vw;
+  border-radius: 1px;
+}
+
+.opacity {
+  opacity: 30%;
+}
+
+.ongoing {
+  border-left: 4px solid black;
+  font-weight: bold;
+}
+
+.completed .task-name {
+  text-decoration: line-through;
+}
+
+.add-tasks {
+  background-color: var(--dark-brown);
+  color: var(--white);
+  opacity: 35%;
+  font-weight: bold;
+  justify-content: center;
+  border: 2px dashed var(--white);
+  margin-top: 0.3vw;
+}
+
+.add-tasks:hover {
+  opacity: 60%;
+}
+
+.tasks-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: var(--opacity-red);
+  color: var(--white);
+  border-top: 0.8px solid var(--white);
+  margin: 2vw 0 8vw 0;
+  font-size: 1vw;
+}
+
+.tasks-footer span {
+  font-weight: bold;
+  font-size: 2vw;
+  margin-left: 0.5vw;
 }
