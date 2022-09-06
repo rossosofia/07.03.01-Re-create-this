@@ -1,9 +1,71 @@
 :root {
-  --red: #d94e4e;
+  --red: #db524d;
+  --medium-red: #be5551;
+  --opacity-red: #df645f;
   --white: #ffffff;
   --light-gray: #f2f2f2;
-  --paragraph-text-color: #591e23;
+  --dark-brown: #591e23;
   --checkbox-checked-task: url();
 }
 
-/* look for typography */
+/* remember to look for typography */
+
+/*  */
+body {
+  margin: 0;
+}
+
+/* NAVBAR */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--red);
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 15px;
+  padding-right: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2/-2;
+  color: var(--white);
+  border-bottom: 0.2px solid var(--medium-red);
+}
+
+.menu button {
+  border: none;
+  color: var(--white);
+  background-color: var(--opacity-red);
+  border-radius: 3px;
+  padding: 5px 7px 5px 7px;
+  margin-left: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.6em;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.menu button:hover {
+  background-color: var(--medium-red);
+}
+
+.menu button img {
+  width: 10px;
+  padding-right: 5px;
+}
